@@ -32,8 +32,6 @@ spec:
       containers:
       - name: primary
         image: index.docker.io/noldar/test-spinnaker
-      imagePullSecrets:
-          - name: docker
         ports:
         - containerPort: 8000
         readinessProbe:
@@ -43,6 +41,8 @@ spec:
         envFrom:
         - configMapRef:
             name: spinnaker-demo-config
+      imagePullSecrets:
+          - name: docker
 
 ---
 
