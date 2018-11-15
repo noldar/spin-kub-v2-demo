@@ -32,6 +32,8 @@ spec:
       containers:
       - name: primary
         image: index.docker.io/noldar/test-spinnaker
+      imagePullSecrets:
+          - name: dockercred
         ports:
         - containerPort: 8000
         readinessProbe:
