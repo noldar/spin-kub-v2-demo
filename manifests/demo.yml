@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
       - name: primary
-        image: /noldar/test-spinnaker
+        image: index.docker.io/noldar/test-spinnaker
         ports:
         - containerPort: 8000
         readinessProbe:
