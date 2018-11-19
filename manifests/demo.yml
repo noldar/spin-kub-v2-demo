@@ -30,7 +30,7 @@ spec:
         app: spinnaker
     spec:
       containers:
-      - name: primary
+      - name: demo-spinnaker
         image: index.docker.io/noldar/test-spinnaker
         ports:
         - containerPort: 8000
